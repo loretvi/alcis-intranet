@@ -5,55 +5,73 @@
   <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/logo-alcis.png') }}">
   <link rel="icon" type="image/png" href="{{ asset('assets/img/logo-alcis.png') }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>INTRANET</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <title>INTRANET</title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   <!-- CSS Files -->
   <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
+  <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet') }}" />
   <link href="{{ asset('assets/css/now-ui-dashboard.css') }}" rel="stylesheet" />
 
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{ asset('assets/demo/demo.css') }}" rel="stylesheet') }}" />
+
+
 </head>
 <body class="">
+    <!--Sidebar -->
     <div class="sidebar" data-color="orange">
-      <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          <img src="{{ asset('assets/img/logo-alcis.png') }}" alt="">
-        </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Intranet
-        </a>
-      </div>
-      <div class="sidebar-wrapper" id="sidebar-wrapper">
-        <ul class="nav">
-          <li class="active ">
-            <a href="./dashboard.html">
-              <i class="now-ui-icons design_app"></i>
-              <p>Inicio</p>
+        <div class="logo">
+            <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+                <img src="{{ asset('assets/img/logo-alcis.png') }}" alt="">
             </a>
-          </li>
-          <li>
-            <a href="./icons.html">
-              <i class="now-ui-icons education_atom"></i>
-              <p>Archivos</p>
-            </a>
-          </li>
-          <li>
-            <a href="./map.html">
-              <i class="now-ui-icons location_map-big"></i>
-              <p>Usuarios</p>
-            </a>
-          </li>
-          <li>
-            <a href="./notifications.html">
-              <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Grupos</p>
-            </a>
-          </li>
+            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+                <p>Intranet</p>
+             </a>
+        </div>
+
+        <div class="sidebar-wrapper" id="sidebar-wrapper">
+            <ul class="nav">
+                <li class="active ">
+                    <a href="./dashboard.html">
+                        <i class="now-ui-icons design_app"></i>
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li>
+                    <a  class="nav-link" href="#" >
+                        <i class="now-ui-icons education_atom"></i>
+                        <p>Archivos</p>
+                    </a>
+                    <ul class="submenu collapse">
+                        <li><a class="nav-link" href="#">Añadir</a></li>
+                        <li><a class="nav-link" href="#">Añadir Página</a></li>
+                        <li><a class="nav-link" href="#">Mostrar todo</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a  class="nav-link" href="#" >
+                        <i class="now-ui-icons education_atom"></i>
+                        <p>Usuarios</p>
+                    </a>
+                    <ul class="submenu collapse">
+                        <li><a class="nav-link" href="#">Añadir</a></li>
+                        <li><a class="nav-link" href="#">Todos los usuarios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a  class="nav-link" href="#" >
+                        <i class="now-ui-icons education_atom"></i>
+                        <p>Grupos</p>
+                    </a>
+                    <ul class="submenu collapse">
+                        <li><a class="nav-link" href="#">Añadir</a></li>
+                        <li><a class="nav-link" href="#">Mostrar todos los grupos</a> </li>
+                    </ul>
+                </li>
         </ul>
       </div>
     </div>
@@ -119,6 +137,7 @@
   </div>
 
   <!--   Core JS Files   -->
+  <script src="{{ asset('assets/js/funciones.js') }}"></script>
   <script src="{{ asset('assets/js/core/jquery.min.js') }}"></script>
   <script src="{{ asset('assets/js/core/popper.min.js') }}"></script>
   <script src="{{ asset('assets/js/core/bootstrap.min.js') }}"></script>

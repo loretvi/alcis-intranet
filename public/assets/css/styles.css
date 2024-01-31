@@ -1,0 +1,21 @@
+.input-form{
+    background-color: red;
+    border-radius: 30px;
+    border-color: solid blueviolet;
+}
+
+.fon-div{
+    width: 50%;
+    height: 50%;
+    color: brown;
+    background-color: blue;
+    background: pink;
+}
+.contenedor{
+    width: 50%;
+}
+
+.text-title{
+    color: blue;
+}
+
